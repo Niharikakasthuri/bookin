@@ -11,3 +11,218 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/*----------------------------------------Nav-----------------------------*/
+.nav-align{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.list-font{
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .nav-align {
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .list-font {
+    font-size: 16px;
+  }
+}
+
+
+/*---------------------------------------------Home------------------------------*/
+.home-container{
+  display: flex;
+  justify-content: center;
+}
+.home-card{
+  height:250px;
+  width: 80%;
+  background-color: #edf0ee;
+  border-radius: 5px;
+}
+.home-align{
+  display: flex;
+  justify-content: space-between;
+}
+.home-image{
+  height: 250px;
+  width:300px;
+  border-radius: 5px;
+}
+.book-card{
+  background-color: white;
+  height:100px;
+  width:80%;
+  border-radius: 5px;
+  box-shadow: 7px 7px 7px 10px rgba(0, 0, 0, 0.1);
+}
+.card-align{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.card-input-align{
+  display: flex;
+  flex-direction: column;
+}
+.decrement-button{
+  background-color: white;
+  border-radius: 50px;
+  border: 1px solid black;
+}
+.increment-button{
+  background-color: black;
+  color:white;
+  border-radius: 50px;
+  border:none;
+}
+.button{
+  background-color: #05397d;
+  color:white;
+  border-radius: 10px;
+  border:none;
+  height:50px;
+  width: 80px;
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    padding: 10px;  
+  }
+  .home-card {
+    width: 100%;  
+  }
+  .home-image {
+    width: 100%;  
+    height: auto;  
+  }
+  .book-card {
+    width: 80%;  
+    margin-bottom: 20px;  
+    height: 350px;
+  }
+  .card-align {
+    flex-direction: column;  
+    align-items: center;  
+  }
+  .decrement-button,
+  .increment-button,
+  .button {
+    width: 100%;  
+    font-size: 16px;
+  }
+}
+
+
+/*-------------------------------------------book------------------------------------------*/
+.book-align{
+  display: flex;
+  justify-content: center;
+}
+.book-input{
+  height:40px;
+  width:250px;
+  background-color: white;
+  border:none;
+  border-radius: 5px;
+}
+.book-page-card{
+    height:250px;
+    width: 80%;
+    background-color: #edf0ee;
+    border-radius: 5px;
+}
+.book-page-align{
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .book-align {
+    flex-direction: column; 
+    padding: 10px; 
+  }
+  .book-page-card {
+    width: 100%; 
+    height: auto; 
+  }
+  .book-input {
+    width: 100%; 
+  }
+}
+
+/*----------------------------------------------------------payment-------------------------------------*/
+.payment-heading{
+  font-size: 30px;
+  font-weight: 700;
+  color:black;
+}
+.payment-bottom{
+  background-color: #edf0ee;
+  height:300px;
+  width: 100%;
+}
+.image{
+  height:200px;
+  width:200px;
+}
+.image{
+  height:150px;
+  width:250px;
+}  
+@media (max-width: 768px) {
+  .payment-heading {
+    font-size: 22px; 
+  }
+  .payment-bottom {
+    height: 300px; 
+    padding: 15px; 
+  }
+  .image{
+    height:150px;
+    width:200px;
+  }  
+}
+
+/*------------------------------------------------------services--------------------------------------*/
+.services-card{
+  background-color: white;
+  height:300px;
+  width: 400px;
+  box-shadow: 7px 7px 7px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: none;
+}
+.icon{
+  height:70px;
+  width:70px;
+}
+.services-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .services-card {
+    width: 90%; 
+    height: auto; 
+    margin-bottom: 30px;
+  }
+  .icon {
+    height: 50px; 
+    width: 50px;
+  }
+  .services-container {
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+  }
+}
